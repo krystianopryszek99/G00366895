@@ -1,10 +1,10 @@
-import { Component} from '@angular/core';
+import { Component } from '@angular/core';
 import { Flashlight } from '@ionic-native/flashlight/ngx';
 // storage module 
-import { Storage} from '@ionic/storage';
-
-import {PopoverController} from '@ionic/angular';
-import {PopovercomponentPage} from '../popovercomponent/popovercomponent.page';
+import { Storage } from '@ionic/storage';
+//import popover - in order to allow popover to work
+import { PopoverController } from '@ionic/angular';
+import { PopovercomponentPage } from '../popovercomponent/popovercomponent.page';
 
 @Component({
   selector: 'app-home',
@@ -14,23 +14,25 @@ import {PopovercomponentPage} from '../popovercomponent/popovercomponent.page';
 export class HomePage {
 
   //storage
-  name:string;
-  
-  constructor(private storage:Storage ,private flashlight:Flashlight, private popover:PopoverController) {}
+  name: string;
 
-  flashOn(){
+  constructor(private storage: Storage, private flashlight: Flashlight, private popover: PopoverController) { }
+
+  //method for plugin "Flashlight"
+  flashOn() {
     this.flashlight.toggle();
   }
 
-  save(){
+  save() {
     console.log(this.name);
     this.storage.set("name", this.name);
   }
 
-  CreatePopOver(){
-    this.popover.create({component:PopovercomponentPage,showBackdrop:false}).then((popoverElement)=>{
+  //this method creates the PopOver that displays on the screen
+  CreatePopOver() {
+    this.popover.create({ component: PopovercomponentPage, showBackdrop: false }).then((popoverElement) => {
       popoverElement.present();
     })
   }
-  
+
 }

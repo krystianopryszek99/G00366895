@@ -12,7 +12,6 @@ import {PopoverController} from '@ionic/angular';
 export class PopovercomponentPage implements OnInit {
 
     //storage
-    //name:string;
     myRate:string;
 
   constructor(private popover:PopoverController, private storage:Storage) { }
@@ -33,12 +32,7 @@ export class PopovercomponentPage implements OnInit {
     );
   }
 
-  // ClosePopover(){
-  //   console.log(this.name);
-  //   this.storage.set("name", this.name);
-  //   this.popover.dismiss();
-  // }
-
+//saves the rate that the user picked which is stored
   onSave(){
     console.log(this.myRate);
     this.storage.set("rate", this.myRate);

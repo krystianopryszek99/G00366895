@@ -1,5 +1,6 @@
 <ion-header>
   <ion-toolbar>
+    <!-- back button to take user back to the home page of the application -->
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
@@ -8,26 +9,22 @@
 </ion-header>
 
 <ion-content>
-  <!-- <ul>
-    <li *ngFor="let news of NewsData"> 
-      <h2>{{news.Title}}</h2>
-      <h2>{{news.Year}}</h2>
-      <img src="{{news.Poster}}">
-    </li>
-  </ul> -->
-  <!-- <ion-input placeholder="enter name of the movie" [(ngModel)]="searchTitle"></ion-input>
-  <ion-button (click)="searchFor()">Search</ion-button> -->
-
+  <!-- search bar that reads the title name and looks for other movies with the title you enter -->
   <ion-searchbar [(ngModel)]="searchTitle" (click)="searchFor()"></ion-searchbar>
   <br>
-
-  <ion-card *ngFor="let news of NewsData"> 
+  <!-- inside this card it take the api from external http and reads the data to output on screen -->
+  <!-- this api is not related to the app -->
+  <!-- ion-card stores all that data and outputs well structured look of the application -->
+  <ion-card *ngFor="let news of NewsData">
+    <!-- takes the image and outputs it on screen for every movie -->
     <img src="{{news.Poster}}" />
     <ion-card-header>
       <ion-card-subtitle>Title</ion-card-subtitle>
+      <!-- reads the title of the movie and outputs on screen with the correct title -->
       <ion-card-title>{{news.Title}}</ion-card-title>
     </ion-card-header>
     <ion-card-content>
+      <!-- outputs the year of the movie -->
       {{news.Year}}
     </ion-card-content>
   </ion-card>

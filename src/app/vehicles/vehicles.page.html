@@ -6,78 +6,50 @@
   </ion-toolbar>
 </ion-header>
 
- <!--<ion-content>
-  
-  <ion-card>
-    <ion-card-header>
-      <ion-card-subtitle><img width="250" height="250" src="../assets/imgs/legend.png"/></ion-card-subtitle>
-    </ion-card-header>
-  
-    <ion-card-content>
-      Are you looking for a safe, eco-friendly, fuel efficient car that's practical for getting around town?
-       Well you are in the wrong website. Are you looking to get them dripping as you pass by? Welcome! 
-       You are in a safe place
-      <br><br>
-      <ion-button [routerLink]="['/legendary-motors']">Continue</ion-button>
-    </ion-card-content>
-  </ion-card>
-  <ion-card>
-    <ion-card-header>
-      <ion-card-subtitle><img width="250" height="250" src="../assets/imgs/south.png"/></ion-card-subtitle>
-    </ion-card-header>
-  
-    <ion-card-content>
-      Buying a car or motorcycle should be easy. Visiting showrooms can be stressful. 
-      Salespeople are pushy. Everything is shiny, and everything has to be an exhausting haggle.
-      Not with us. There is no haggle here - the price is the price, so you know you are paying the 
-      best price and don't have to worry. You're saving money! Because we told you so. 
-      This is as low as we go So pay up and give thanks.
-      <br><br>
-      <ion-button [routerLink]="['/vehicles']">Continue</ion-button>
-    </ion-card-content>
-  </ion-card> -->
 <ion-content>
-  <div id="container"> 
+  <div id="container">
     <br><br>
-<!-- Legendary -->
-  <ion-card class="class"> 
-    <!-- Lining -->
-     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <!-- Legendary page-->
 
-    <img width="250" height="250" src="../assets/img/legend.png"/>
-  
-    <p> 
-      Are you looking for a safe, eco-friendly, <br>
-      fuel efficient car that's practical for getting around town?<br>
-       Well you are in the wrong website. Are you looking to get them dripping as you pass by? Welcome! <br>
-       You are in a safe place
-       <br><br>
-      <ion-button [routerLink]="['/legendary']">Continue to <br> Legendary Motors</ion-button>
-    </p>
-  </ion-card> 
+    <ion-card class="class">
+      <!-- Lining and spacing -->
+      <div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      </div>
 
-  <br><br>
-  
-  <!-- Southern San Andreas -->
+      <img width="250" height="250" src="../assets/img/legend.png" />
 
-  <ion-card class="class"> 
-   
-    <!-- Lining -->
-     <br><br><br>
+      <p>
+        Are you looking for a safe, eco-friendly, <br>
+        fuel efficient car that's practical for getting around town?<br>
+        Well you are in the wrong website. Are you looking to get them dripping as you pass by? Welcome! <br>
+        You are in a safe place
+        <br><br>
+        <!-- button that takes you to legendary page -->
+        <ion-button [routerLink]="['/legendary']">Continue to <br> Legendary Motors</ion-button>
+      </p>
+    </ion-card>
 
-    <img width="250" height="250" src="../assets/img/south.png"/>
-  
-    <ion-card-content>
-      Keep close to Nature's heart... <br>
-      and break clear away, once in awhile,<br>
-      and climb a mountain or spend a week in the woods. Wash your spirit clean.
-      <br><br>
-      <ion-button [routerLink]="['/southern']">Continue to <br> Southern Sanadreas</ion-button>
-    </ion-card-content>
-  </ion-card>
+    <br><br>
 
-</div>
-</ion-content> 
+    <!-- Southern San Andreas -->
 
+    <ion-card class="class">
 
+      <!-- Lining -->
+      <br><br><br>
 
+      <img width="250" height="250" src="../assets/img/south.png" />
+
+      <ion-card-content>
+        Keep close to Nature's heart... <br>
+        and break clear away, once in awhile,<br>
+        and climb a mountain or spend a week in the woods. Wash your spirit clean.
+        <br><br>
+        <!-- button that takes you to southern page -->
+        <ion-button [routerLink]="['/southern']">Continue to <br> Southern Sanadreas</ion-button>
+      </ion-card-content>
+    </ion-card>
+
+  </div>
+</ion-content>

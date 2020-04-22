@@ -1,3 +1,4 @@
+//allows text to be centered and well structured
 #container {
     text-align: center;
     --background: #ccc url("/assets/img/bg-logo3.jpg") no-repeat center center / cover;
@@ -12,11 +13,13 @@
   --background: #ccc url("/assets/img/bg-logo3.jpg") no-repeat center center / cover;
   }
 
+  //background image for home page
   ion-content {
     --background: #ccc url("/assets/img/dynasty-logo.jpg") no-repeat center center fixed;
     background-size: cover;
   }
 
+  //this class centers text and changes the color to black
   .class{
     width: 70%;
     margin: auto;

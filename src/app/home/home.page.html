@@ -1,36 +1,42 @@
-<!-- <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Home page
-    </ion-title>
-  </ion-toolbar>
-</ion-header> -->
-
 <ion-content [fullscreen]="true">
   <br><br><br><br>
+  <!-- main div -->
   <div id="container">
+    <!-- lining and spacing -->
     <br><br><br><br><br><br>
     <strong>Get Started!<br>
       ______________</strong><br><br><br>
-    
-    <p><img width="250" height="250" src="../assets/img/rockLogo.png"/> </p>
+
+
+    <p><img width="250" height="250" src="../assets/img/rockLogo.png" /> </p>
     <br><br>
+    <!-- button that will take you to "vehicles" page 
+         this method will look for this page and open it when the button is clicked-->
     <ion-button [routerLink]="['/vehicles']">
       Vehicles
     </ion-button>
     <br>
+    <!-- button that will take you to "weapons" page -->
     <ion-button [routerLink]="['/weapons']">
-       Weapons
+      Weapons
     </ion-button>
     <br>
-      <ion-button [routerLink]="['/properties']">
-         Property
-      </ion-button>
-      <br>
-      <ion-button (click)="flashOn()">Flashlight</ion-button>
-      <br>
-      <ion-button (click)="CreatePopOver()">Rate App</ion-button>
-      <br>
-      <ion-button [routerLink]="['/news']">Movies Page<br>API</ion-button>
+    <!-- button that will take you to "properties" page -->
+    <ion-button [routerLink]="['/properties']">
+      Property
+    </ion-button>
+    <br>
+    <!-- clicking you will read all the methods and turn on the flashlight -->
+    <ion-button (click)="flashOn()">Flashlight</ion-button>
+    <br>
+    <!-- by clicking the button it will take you to the movie page 
+     I was doing news api but it wasn't working for me so I left the 
+     name of it as "news" but this will take you to the movie page
+     wasn't sure if renaming a page will cause any problems -->
+    <ion-button [routerLink]="['/news']">Movies Page<br>API</ion-button>
+    <br>
+    <!-- this reads the method and opens a popup which has option to rate the app
+        that is stored and then could be retreaved  -->
+    <ion-button (click)="CreatePopOver()">Rate App</ion-button>
   </div>
 </ion-content>

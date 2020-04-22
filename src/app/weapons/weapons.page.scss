@@ -1,6 +1,6 @@
+//allows text to be centered and well structured
 #container {
   text-align: center;
-
   background-color: black;
   position: absolute;
   left: 0;
@@ -10,13 +10,14 @@
   width: 80%;
   margin: auto;
 }
-
+  //this class centers text and changes the color to black
   .class{
     width: 80%;
     margin: auto;
     background-color: black;
    }
 
+   //this class allows the image to output inside the ion-card
    .board{
     width: 80%;
     margin: auto;
@@ -24,6 +25,7 @@
     background-size: cover;
    }
 
+  //background image for home page
   ion-content {
     --background: #ccc url("/assets/img/dynasty-logo.jpg") no-repeat center center fixed;
     background-size: cover;

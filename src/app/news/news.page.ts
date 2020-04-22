@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+//importing service for movie api
 import { NewsService } from '../Services/news.service';
 
 @Component({
@@ -23,8 +24,10 @@ export class NewsPage implements OnInit {
     );
   }
 
+  //searches for title of the movie
   searchFor(){
     console.log(this.searchTitle);
+    //makes it available using angular framework and we get access to it 
     this.newsService.GetSearchData(this.searchTitle).subscribe(
       (data)=>{
         this.NewsData = data.Search;

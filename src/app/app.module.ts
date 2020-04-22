@@ -16,7 +16,7 @@ import { Flashlight } from '@ionic-native/flashlight/ngx';
 import {HttpClientModule} from '@angular/common/http';
 // importing forms module to use ngModel / also allow two-way data binding
 import {FormsModule} from '@angular/forms';
-// importing Popover
+// importing Popover 
 import {PopovercomponentPageModule} from './popovercomponent/popovercomponent.module';
 
 @NgModule({
