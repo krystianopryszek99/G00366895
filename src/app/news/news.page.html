@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Movies</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- <ul>
+    <li *ngFor="let news of NewsData"> 
+      <h2>{{news.Title}}</h2>
+      <h2>{{news.Year}}</h2>
+      <img src="{{news.Poster}}">
+    </li>
+  </ul> -->
+  <!-- <ion-input placeholder="enter name of the movie" [(ngModel)]="searchTitle"></ion-input>
+  <ion-button (click)="searchFor()">Search</ion-button> -->
+
+  <ion-searchbar [(ngModel)]="searchTitle" (click)="searchFor()"></ion-searchbar>
+  <br>
+
+  <ion-card *ngFor="let news of NewsData"> 
+    <img src="{{news.Poster}}" />
+    <ion-card-header>
+      <ion-card-subtitle>Title</ion-card-subtitle>
+      <ion-card-title>{{news.Title}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      {{news.Year}}
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

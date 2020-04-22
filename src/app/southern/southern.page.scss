@@ -1,0 +1,23 @@
+#container {
+  text-align: center;
+
+  background-color: black;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80%;
+  margin: auto;
+}
+
+  .class{
+    width: 80%;
+    margin: auto;
+    background-color: black;
+   }
+
+  ion-content {
+    --background: #ccc url("/assets/img/dynasty-logo.jpg") no-repeat center center fixed;
+    background-size: cover;
+  }

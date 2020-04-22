@@ -1,20 +1,36 @@
-<ion-header [translucent]="true">
+<!-- <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Home page
     </ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
+  <br><br><br><br>
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <br><br><br><br><br><br>
+    <strong>Get Started!<br>
+      ______________</strong><br><br><br>
+    
+    <p><img width="250" height="250" src="../assets/img/rockLogo.png"/> </p>
+    <br><br>
+    <ion-button [routerLink]="['/vehicles']">
+      Vehicles
+    </ion-button>
+    <br>
+    <ion-button [routerLink]="['/weapons']">
+       Weapons
+    </ion-button>
+    <br>
+      <ion-button [routerLink]="['/properties']">
+         Property
+      </ion-button>
+      <br>
+      <ion-button (click)="flashOn()">Flashlight</ion-button>
+      <br>
+      <ion-button (click)="CreatePopOver()">Rate App</ion-button>
+      <br>
+      <ion-button [routerLink]="['/news']">Movies Page<br>API</ion-button>
   </div>
 </ion-content>
